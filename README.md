@@ -1,12 +1,12 @@
 # 🌐 Secure 3-Tier Web Application on AWS using Terraform
 
-This project demonstrates how to build a **secure and scalable 3-tier architecture** on AWS using **Terraform**. It is designed for beginners who want to learn Infrastructure as Code (IaC), networking, and automation with Terraform.
+This project shows how to build a **secure and scalable 3-tier architecture** on AWS using **Terraform**. It is designed for beginners who want to learn Infrastructure as Code (IaC), networking, and automation with Terraform.
 
 ---
 
 ## 🧱 Project Architecture
 
-This project is based on the classic **three-tier architecture**:
+This project is based on the  **three-tier architecture**:
 
 1. **Presentation Tier (Web Tier)**: An EC2 instance running Apache HTTP server (in the public subnet).
 2. **Application Tier**: Not implemented as a separate service in this project (logic is minimal), but can be added using Lambda or containers.
@@ -65,6 +65,10 @@ terraform apply
 
 # 5. After success, visit the EC2 Public IP in your browser to see Apache page.
 
+Future Improvements to me made in this project ;
+- Add an Application Tier using AWS Lambda or ECS
+- Set up monitoring with CloudWatch
+- Use S3 + CloudFront for static content
 
 Future Improvements
 - Add an Application Tier using AWS Lambda or ECS
