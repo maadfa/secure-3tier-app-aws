@@ -71,3 +71,14 @@ variable "db_instance_class" {
   type        = string
   default     = "db.t3.micro"
 }
+
+variable "public_subnet_ids" {
+  description = "List of public subnet IDs for ALB"
+  type        = list(string)
+}
+
+variable "domain_name" {
+  description = "The domain name for Route 53"
+  type        = string
+}
+

@@ -35,7 +35,7 @@ All resources are deployed inside a custom **VPC** with proper routing and **sec
 - Creates a custom Virtual private cloud with public and private subnets.
 - Launches an EC2 instance in the public subnet and installs Apache.
 - Deploys a MySQL RDS database in a private subnet.
-- Connects EC2 to RDS via internal networking.
+- Connects EC2 to RDS through  internal networking.
 - Uses security groups to allow:
   - HTTP (80) and SSH (22) to EC2.
   - MySQL (3306) only from EC2 to RDS.
@@ -66,3 +66,7 @@ terraform apply
 # 5. After success, visit the EC2 Public IP in your browser to see Apache page.
 
 
+Future Improvements
+- Add an Application Tier using AWS Lambda or ECS
+- Set up monitoring with CloudWatch
+- Use S3 + CloudFront for static content
